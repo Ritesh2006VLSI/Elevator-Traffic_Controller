@@ -142,9 +142,7 @@ The testbench verifies:
 
 # 📸 Simulation Waveform
 
-```markdown
 ![Simulation Waveform](waveform.png)
-```
 
 ---
 
