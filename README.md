@@ -19,6 +19,7 @@ Elevator-Traffic_Controller
 │   └── result.png
 │
 ├── Traffic_Light
+│   ├── README.md
 │   ├── traffic_light.v
 │   ├── traffic_light_tb.v
 │   ├── ckt_diagram.pdf
