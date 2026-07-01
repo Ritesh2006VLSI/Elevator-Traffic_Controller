@@ -32,7 +32,7 @@ module elevator(
             else if (next_state == MOVING_DOWN) curr_direction <= 1'b0;
             end
     end
-    
+    //made by ritesh
     always @(*) begin
         case(state)
             IDLE : begin
@@ -117,7 +117,7 @@ module elevator(
     end
     
 endmodule
-
+//made by ritesh
 
 module scheduler(
     input clk, rst,
@@ -141,7 +141,7 @@ module scheduler(
         else 
             pending_requests <= (pending_requests | floor) & ~clear_mask;
     end
-    
+    //made by ritesh
     always @(*) begin
         req_here = 0; req_above = 0; req_below = 0; arrived = 0;    
         req_here = pending_requests[current_floor];
@@ -163,7 +163,7 @@ module scheduler(
             end
         endcase
     end
-    
+    //made by ritesh
 endmodule
 
 module elevator_system(
@@ -178,7 +178,7 @@ module elevator_system(
     output move_up, move_down,
     output alarm
 );
-
+//made by ritesh
     wire req_here, req_above, req_below, arrived;
 
     scheduler schedule(
@@ -198,5 +198,5 @@ module elevator_system(
         .move_up(move_up), .move_down(move_down),
         .alarm(alarm)
     );
-
+//made by ritesh
 endmodule
